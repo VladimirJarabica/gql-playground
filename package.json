@@ -1,0 +1,38 @@
+{
+  "name": "gql-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "nodemon --watch \"src/**\" --exec \"ts-node src/server.ts\"",
+    "codegen": "ts-node --transpile-only graphqlCodegen.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirJarabica/gql-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirJarabica/gql-playground/issues"
+  },
+  "homepage": "https://github.com/VladimirJarabica/gql-playground#readme",
+  "dependencies": {
+    "@faker-js/faker": "^7.2.0",
+    "@graphql-tools/schema": "^8.3.14",
+    "apollo-server": "^3.9.0",
+    "apollo-server-express": "^3.9.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "graphql-import-node": "^0.0.5",
+    "ts-node": "^10.8.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/schema-ast": "^2.4.1",
+    "@graphql-codegen/typescript": "^2.5.1",
+    "@graphql-codegen/typescript-resolvers": "^2.6.6",
+    "nodemon": "^2.0.16"
+  }
+}
